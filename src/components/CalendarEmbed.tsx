@@ -7,11 +7,11 @@ export function CalendarEmbed() {
   const calId = client.ghl.calendarId;
 
   return (
-    <section id="calendrier" className="calendar-section section--cream">
+    <section id="calendrier" className="calendar-section">
       <div className="wrap">
         <div className="calendar-card">
           <div className="calendar-header">
-            <h3>Choisis ton créneau de consultation privée</h3>
+            <h3>Choisis ton créneau</h3>
             <p>Sélectionne une date et une heure qui te conviennent.</p>
             <div className="calendar-trust">
               <span>

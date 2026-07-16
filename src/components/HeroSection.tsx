@@ -2,31 +2,31 @@ import { client } from "@/config/client";
 
 export function HeroSection() {
   return (
-    <section className="hero-main section--navy">
+    <section className="hero section--dark">
       <div className="wrap">
-        <div className="hero-main__content">
-          <span className="eyebrow hero-eyebrow">
+        <div className="hero__content">
+          <span className="eyebrow">
             Mamans du Québec · Secondaire 4 SN
           </span>
-          <h1 className="hero-main__h1">
+          <h1 className="hero__h1">
             Ton enfant part en Secondaire 4{" "}
-            <em className="hero-main__accent">Maths SN</em>{" "}
-            en septembre. On garantit 90&nbsp;% + à l&apos;examen du
-            ministère, ou tu es remboursée.
+            <em className="hero__accent">Maths SN</em>{" "}
+            en septembre. On garantit 90&nbsp;%+ au ministère, ou tu es
+            remboursée.
           </h1>
-          <p className="hero-main__sub">
-            Regarde cette vidéo de 9 minutes avant de choisir ton créneau —
-            tu vas savoir exactement comment on travaille, ce qu&apos;on a
-            produit comme résultats, et ce qu&apos;on garantit.
+          <p className="hero__sub">
+            Regarde cette vidéo de 9 minutes avant de choisir ton
+            créneau — tu vas savoir exactement comment on travaille,
+            les résultats qu&apos;on a produits, et ce qu&apos;on garantit.
           </p>
         </div>
 
-        <div className="hero-main__video">
+        <div className="hero__video">
           <div className="video-container">
             {client.vsl.embedUrl ? (
               <iframe
                 src={client.vsl.embedUrl}
-                title="Tuteur Match – Vidéo de présentation privée"
+                title="Tuteur Match — Vidéo de présentation"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
@@ -36,20 +36,17 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div className="hero-main__cta">
-          <a href="#calendrier" className="btn btn--gold btn--lg">
-            Choisir mon créneau de consultation{" "}
+        <div className="hero__cta">
+          <a href="#calendrier" className="btn btn--lg">
+            Réserver ma consultation gratuite{" "}
             <span className="arrow">&rarr;</span>
           </a>
-          <p
-            className="cta-micro"
-            style={{ color: "rgba(250,249,247,.55)", marginTop: "12px" }}
-          >
-            Gratuit. Confidentiel. Aucun engagement.
+          <p className="cta-micro">
+            20 à 30 min · Gratuit · Aucun engagement
           </p>
         </div>
 
-        <div className="stats-strip hero-main__stats">
+        <div className="stats-strip">
           {client.stats.map((s) => (
             <div key={s.label} className="stat-item">
               <div className="stat-value">
