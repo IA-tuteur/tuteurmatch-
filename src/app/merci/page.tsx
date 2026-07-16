@@ -4,10 +4,12 @@ import { client } from "@/config/client";
 export const metadata: Metadata = {
   title: `Consultation confirmée — ${client.name}`,
   description:
-    "Ta consultation privée gratuite est réservée. Voici comment te préparer.",
+    "Ta consultation privée gratuite est réservée. Regarde cette vidéo pour savoir à quoi t'attendre.",
 };
 
 export default function ThankYouPage() {
+  const tyVideoUrl = "";
+
   return (
     <main>
       <section className="ty-hero">
@@ -21,9 +23,26 @@ export default function ThankYouPage() {
             Ta consultation est réservée.
           </h1>
           <p className="lead">
-            {client.spokesperson}{" "}va te contacter à l&apos;heure prévue.
-            Vérifie tes courriels pour la confirmation.
+            Regarde cette courte vidéo — {client.spokesperson}{" "}
+            t&apos;explique exactement comment te préparer
+            pour ton appel.
           </p>
+
+          <div className="ty-video">
+            <div className="video-container">
+              {tyVideoUrl ? (
+                <iframe
+                  src={tyVideoUrl}
+                  title="Prochaines étapes — Tuteur Match"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              ) : (
+                <div className="video-placeholder">VIDÉO À VENIR</div>
+              )}
+            </div>
+          </div>
+
           <div className="email-alert">
             <strong>Vérifie ta boîte de réception</strong>
             <p>
