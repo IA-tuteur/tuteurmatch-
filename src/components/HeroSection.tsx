@@ -8,14 +8,12 @@ export function HeroSection() {
           Parents du Québec · Secondaire 4 SN
         </span>
         <h1 className="hero__h1">
-          90&nbsp;%+ à l&apos;examen du ministère en maths SN.{" "}
-          <em className="hero__accent">Garanti</em>, ou remboursé.
+          Ton enfant entre en Secondaire 4 Maths SN?
+          On <em className="hero__accent">garantit</em>{" "}
+          90&nbsp;%+ à l&apos;examen du ministère — ou c&apos;est remboursé.
         </h1>
         <p className="hero__sub">
           Sans devenir la police des devoirs chaque soir.
-          On prend en charge la réussite de ton enfant en maths
-          Secondaire 4 SN — regarde cette vidéo de 9 minutes
-          pour comprendre comment.
         </p>
 
         <div className="hero__video">
