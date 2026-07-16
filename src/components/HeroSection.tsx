@@ -8,9 +8,9 @@ export function HeroSection() {
           Parents du Québec · Secondaire 4 SN
         </span>
         <h1 className="hero__h1">
-          Ton enfant entre en Secondaire 4 Maths SN?
+          Ton enfant entre en Secondaire 4 Maths SN.
           On <em className="hero__accent">garantit</em>{" "}
-          90&nbsp;%+ à l&apos;examen du ministère — ou c&apos;est remboursé.
+          90&nbsp;%+ à l&apos;examen du ministère, ou c&apos;est remboursé.
         </h1>
         <p className="hero__sub">
           Sans devenir la police des devoirs chaque soir.
