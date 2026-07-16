@@ -13,7 +13,8 @@ export function HeroSection() {
           90&nbsp;%+ à l&apos;examen du ministère, ou c&apos;est remboursé.
         </h1>
         <p className="hero__sub">
-          Sans devenir la police des devoirs chaque soir.
+          Sans devenir la police des devoirs chaque soir — on s&apos;occupe
+          de tout, de la méthode jusqu&apos;aux résultats.
         </p>
 
         <div className="hero__video">
