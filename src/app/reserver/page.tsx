@@ -3,7 +3,7 @@ import { CalendarEmbed } from "@/components/CalendarEmbed";
 import { client } from "@/config/client";
 
 export const metadata: Metadata = {
-  title: `Réserver un appel — ${client.name}`,
+  title: `Réserver un appel | ${client.name}`,
   description:
     "Réserve ta consultation privée gratuite de 20 à 30 minutes avec l'équipe Tuteur Match.",
 };

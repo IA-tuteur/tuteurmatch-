@@ -51,6 +51,22 @@ button { font: inherit; cursor: pointer; }
 
 body > * { position: relative; z-index: 1; }
 
+/* ===== Top bar ===== */
+.top-bar {
+  background: var(--accent);
+  text-align: center;
+  padding: 10px var(--pad-x);
+}
+.top-bar a {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .01em;
+  text-decoration: none;
+  transition: opacity .2s ease;
+}
+.top-bar a:hover { opacity: .85; }
+
 /* ===== Typography ===== */
 h1, h2, h3 {
   font-family: var(--serif);
@@ -116,7 +132,7 @@ section {
   text-align: center;
   background: var(--surface);
 }
-.hero .eyebrow { color: var(--accent); }
+.hero .eyebrow { color: var(--accent); font-weight: 700; }
 .hero__h1 {
   color: var(--ink);
   font-size: clamp(28px, 4.2vw, 48px);
@@ -127,6 +143,7 @@ section {
 .hero__accent {
   color: var(--accent);
   font-style: italic;
+  font-weight: 700;
 }
 .hero__sub {
   color: var(--muted);
@@ -259,7 +276,7 @@ section {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
-.guarantee .eyebrow { color: var(--accent); }
+.guarantee .eyebrow { color: var(--accent); font-weight: 700; }
 .guarantee__text {
   font-family: var(--serif);
   font-size: clamp(17px, 1.8vw, 22px);

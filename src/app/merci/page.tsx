@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { client } from "@/config/client";
 
 export const metadata: Metadata = {
-  title: `Consultation confirmée — ${client.name}`,
+  title: `Consultation confirmée | ${client.name}`,
   description:
     "Ta consultation privée gratuite est réservée. Regarde cette vidéo pour savoir à quoi t'attendre.",
 };
@@ -23,7 +23,7 @@ export default function ThankYouPage() {
             Ta consultation est réservée.
           </h1>
           <p className="lead">
-            Regarde cette courte vidéo — {client.spokesperson}{" "}
+            Regarde cette courte vidéo, {client.spokesperson}{" "}
             t&apos;explique exactement comment te préparer
             pour ton appel.
           </p>
@@ -33,7 +33,7 @@ export default function ThankYouPage() {
               {tyVideoUrl ? (
                 <iframe
                   src={tyVideoUrl}
-                  title="Prochaines étapes — Tuteur Match"
+                  title="Prochaines étapes, Tuteur Match"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 />
@@ -76,7 +76,7 @@ export default function ThankYouPage() {
               <div>
                 <strong>Tes questions</strong>
                 <p>
-                  Note ce qui te préoccupe — on va y répondre directement
+                  Note ce qui te préoccupe, on va y répondre directement
                   pendant l&apos;appel.
                 </p>
               </div>

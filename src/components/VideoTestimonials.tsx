@@ -14,7 +14,7 @@ export function VideoTestimonials() {
                 {t.videoUrl ? (
                   <iframe
                     src={t.videoUrl}
-                    title={`Témoignage — ${t.name}`}
+                    title={`Témoignage de ${t.name}`}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   />
@@ -26,7 +26,7 @@ export function VideoTestimonials() {
               </div>
               <p className="testimonial-card__quote">{t.quote}</p>
               <p className="testimonial-card__author">
-                <strong>{t.name}</strong> — {t.role}
+                <strong>{t.name}</strong>, {t.role}
               </p>
             </div>
           ))}

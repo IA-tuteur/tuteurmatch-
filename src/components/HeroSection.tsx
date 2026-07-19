@@ -13,7 +13,7 @@ export function HeroSection() {
           90&nbsp;%+ à l&apos;examen du ministère, ou c&apos;est remboursé.
         </h1>
         <p className="hero__sub">
-          Sans devenir la police des devoirs chaque soir — on s&apos;occupe
+          Sans devenir la police des devoirs chaque soir, on s&apos;occupe
           de tout, de la méthode jusqu&apos;aux résultats.
         </p>
 
@@ -22,7 +22,7 @@ export function HeroSection() {
             {client.vsl.embedUrl ? (
               <iframe
                 src={client.vsl.embedUrl}
-                title="Tuteur Match — Vidéo de présentation"
+                title="Tuteur Match, Vidéo de présentation"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
