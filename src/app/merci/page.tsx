@@ -58,7 +58,7 @@ export default function ThankYouPage() {
         <div className="wrap wrap--narrow">
           <h2>Prépare-toi pour ton appel</h2>
           <p className="prep-subtitle">
-            Pour qu&apos;on puisse t&apos;aider au maximum en 20-30 minutes
+            Pour qu&apos;on puisse t&apos;aider au maximum en 30 minutes
           </p>
           <ol className="prep-steps">
             <li>
@@ -86,7 +86,7 @@ export default function ThankYouPage() {
               <div>
                 <strong>Un endroit calme</strong>
                 <p>
-                  L&apos;appel dure 20 à 30 minutes. Assure-toi d&apos;être
+                  L&apos;appel dure 30 minutes sur Google Meet. Assure-toi d&apos;être
                   disponible sans interruptions.
                 </p>
               </div>

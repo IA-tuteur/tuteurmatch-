@@ -38,7 +38,7 @@ export function HeroSection() {
             <span className="arrow">&rarr;</span>
           </a>
           <p className="cta-micro">
-            20 à 30 min · Gratuit · Aucun engagement
+            30 min · Google Meet · Gratuit · Aucun engagement
           </p>
         </div>
 

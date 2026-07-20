@@ -15,7 +15,7 @@ export function CalendarEmbed() {
             <p>Sélectionne une date et une heure qui te conviennent.</p>
             <div className="calendar-trust">
               <span>
-                <span className="calendar-dot" /> 20 à 30 min
+                <span className="calendar-dot" /> 30 min sur Google Meet
               </span>
               <span>
                 <span className="calendar-dot" /> Gratuit
