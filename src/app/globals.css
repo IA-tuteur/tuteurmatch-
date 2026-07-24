@@ -66,6 +66,7 @@ body > * { position: relative; z-index: 1; }
   transition: opacity .2s ease;
 }
 .top-bar a:hover { opacity: .85; }
+body:has(.ty-hero) .top-bar { display: none; }
 
 /* ===== Typography ===== */
 h1, h2, h3 {
@@ -450,7 +451,7 @@ section {
 
 /* ===== Thank you page ===== */
 .ty-hero {
-  padding: clamp(56px, 9vw, 120px) 0 clamp(40px, 6vw, 72px);
+  padding: clamp(28px, 4vw, 48px) 0 clamp(28px, 4vw, 40px);
   text-align: center;
   background: var(--surface);
 }
