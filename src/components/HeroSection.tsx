@@ -21,7 +21,7 @@ export function HeroSection() {
           <div className="video-container">
             {client.vsl.embedUrl ? (
               <iframe
-                src={client.vsl.embedUrl}
+                src={`${client.vsl.embedUrl}?autoplay=1&mute=1`}
                 title="Tuteur Match, Vidéo de présentation"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

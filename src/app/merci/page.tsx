@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 export default function ThankYouPage() {
-  const tyVideoUrl = "https://www.youtube.com/embed/3XE7FQIU880";
+  const tyVideoUrl = "https://www.youtube.com/embed/3XE7FQIU880?autoplay=1&mute=1";
 
   return (
     <main>
