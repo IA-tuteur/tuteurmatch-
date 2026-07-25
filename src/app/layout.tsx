@@ -38,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className={`${inter.variable} ${fraunces.variable}`}>
-      <head>
+      <body>
         <Script id="meta-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
@@ -62,8 +62,6 @@ export default function RootLayout({
             alt=""
           />
         </noscript>
-      </head>
-      <body>
         <div className="top-bar">
           <a href="#calendrier">
             Réserve ta consultation gratuite maintenant &rarr;
