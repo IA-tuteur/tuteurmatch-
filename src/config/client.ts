@@ -17,16 +17,16 @@ export const client = {
 
   testimonials: [
     {
-      videoUrl: "",
-      name: "Sophie L.",
-      role: "Parent — élève Sec 4 SN",
+      videoUrl: "https://www.youtube.com/embed/f2m2BIiAyhU",
+      name: "Melynda",
+      role: "Parent",
       quote:
         "Ses notes ont remonté de 15 points avant l'examen du Ministère.",
     },
     {
-      videoUrl: "",
-      name: "Nathalie P.",
-      role: "Parent — Cégep Sciences de la nature",
+      videoUrl: "https://www.youtube.com/embed/mdh-ip6UwkE",
+      name: "Sasha",
+      role: "Parent",
       quote:
         "Elle a eu 92 à son premier examen alors qu'elle stressait tout l'été.",
     },
