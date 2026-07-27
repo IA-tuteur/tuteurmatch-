@@ -20,12 +20,12 @@ export default function ThankYouPage() {
             </svg>
           </div>
           <h1>
-            Votre consultation est réservée.
+            Votre séance stratégique est réservée.
           </h1>
           <p className="lead">
             Regardez cette courte vidéo, {client.spokesperson}{" "}
             vous explique exactement comment vous préparer
-            pour votre appel.
+            pour votre séance.
           </p>
 
           <div className="ty-video">
@@ -47,7 +47,7 @@ export default function ThankYouPage() {
             <strong>Vérifiez votre boîte de réception</strong>
             <p>
               Un courriel de confirmation vient de vous être envoyé avec
-              les détails de votre appel. Si vous ne le voyez pas, vérifiez vos
+              les détails de votre séance. Si vous ne le voyez pas, vérifiez vos
               courriers indésirables.
             </p>
           </div>
@@ -56,7 +56,7 @@ export default function ThankYouPage() {
 
       <section className="prep-section">
         <div className="wrap wrap--narrow">
-          <h2>Préparez-vous pour votre appel</h2>
+          <h2>Préparez-vous pour votre séance stratégique</h2>
           <p className="prep-subtitle">
             Pour qu&apos;on puisse vous aider au maximum en 30 minutes
           </p>
@@ -77,7 +77,7 @@ export default function ThankYouPage() {
                 <strong>Vos questions</strong>
                 <p>
                   Notez ce qui vous préoccupe, on va y répondre directement
-                  pendant l&apos;appel.
+                  pendant la séance.
                 </p>
               </div>
             </li>
@@ -86,7 +86,7 @@ export default function ThankYouPage() {
               <div>
                 <strong>Un endroit calme</strong>
                 <p>
-                  L&apos;appel dure 30 minutes sur Google Meet. Assurez-vous d&apos;être
+                  La séance dure 30 minutes sur Google Meet. Assurez-vous d&apos;être
                   disponible sans interruptions.
                 </p>
               </div>

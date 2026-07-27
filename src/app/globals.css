@@ -71,15 +71,16 @@ body:has(.ty-hero) .top-bar { display: none; }
 /* ===== Typography ===== */
 h1, h2, h3 {
   font-family: var(--serif);
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: normal;
   color: var(--ink);
   margin: 0 0 .4em;
   line-height: 1.15;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 h1 { font-size: clamp(28px, 4.2vw, 46px); }
 h2 { font-size: clamp(22px, 3vw, 34px); }
-h3 { font-size: clamp(18px, 2vw, 22px); font-weight: 500; }
+h3 { font-size: clamp(18px, 2vw, 22px); font-weight: 600; }
 p  { margin: 0 0 1em; }
 
 .eyebrow {
@@ -144,7 +145,7 @@ section {
 .hero__accent {
   color: var(--accent);
   font-style: italic;
-  font-weight: 400;
+  font-weight: 500;
 }
 .hero__sub {
   color: var(--muted);
@@ -247,10 +248,12 @@ section {
 .testimonial-card__quote {
   font-family: var(--serif);
   font-style: italic;
+  font-weight: 500;
   font-size: 15px;
   color: var(--muted);
   line-height: 1.5;
   margin: 0 0 10px;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 .testimonial-card__quote::before {
   content: "\201C";
@@ -280,11 +283,13 @@ section {
 .guarantee .eyebrow { color: var(--accent); }
 .guarantee__text {
   font-family: var(--serif);
+  font-weight: 500;
   font-size: clamp(17px, 1.8vw, 22px);
   line-height: 1.5;
   color: var(--ink);
   max-width: 44ch;
   margin: 0 auto 8px;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 .guarantee__note {
   color: var(--muted);

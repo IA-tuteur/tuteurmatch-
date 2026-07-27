@@ -64,7 +64,7 @@ export default function RootLayout({
         </noscript>
         <div className="top-bar">
           <a href="#calendrier">
-            Réservez votre consultation gratuite maintenant &rarr;
+            Réservez votre consultation gratuite sur Google Meet &rarr;
           </a>
         </div>
         {children}
