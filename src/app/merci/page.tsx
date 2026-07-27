@@ -23,12 +23,15 @@ export default function ThankYouPage() {
             Votre séance stratégique est réservée.
           </h1>
           <p className="lead">
-            Regardez cette courte vidéo, {client.spokesperson}{" "}
-            vous explique exactement comment vous préparer
-            pour votre séance.
+            Ce n&apos;est pas encore terminé. Regardez cette courte vidéo,
+            {" "}{client.spokesperson} vous explique exactement comment
+            vous préparer pour votre séance stratégique sur Google Meet.
           </p>
 
           <div className="ty-video">
+            <span className="eyebrow ty-video__label">
+              Dernière étape avant votre séance sur Google Meet
+            </span>
             <div className="video-container">
               {tyVideoUrl ? (
                 <iframe
