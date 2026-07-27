@@ -20,12 +20,12 @@ export const metadata: Metadata = {
   title:
     "Tuteur Match | 90%+ garanti à l'examen du ministère en maths Sec 4 SN",
   description:
-    "On garantit que ton enfant atteindra 90%+ à l'examen du ministère en maths Secondaire 4 SN, ou tu es remboursé. Regarde la vidéo et réserve ta consultation privée gratuite.",
+    "On garantit que votre enfant atteindra 90%+ à l'examen du ministère en maths Secondaire 4 SN, ou vous êtes remboursé. Regardez la vidéo et réservez votre consultation privée gratuite.",
   openGraph: {
     title:
       "Tuteur Match | 90%+ garanti à l'examen du ministère en maths Sec 4 SN",
     description:
-      "Réserve ta consultation privée gratuite pour la réussite de ton enfant en maths.",
+      "Réservez votre consultation privée gratuite pour la réussite de votre enfant en maths.",
     locale: "fr_CA",
     type: "website",
   },
@@ -64,7 +64,7 @@ export default function RootLayout({
         </noscript>
         <div className="top-bar">
           <a href="#calendrier">
-            Réserve ta consultation gratuite maintenant &rarr;
+            Réservez votre consultation gratuite maintenant &rarr;
           </a>
         </div>
         {children}

@@ -3,7 +3,7 @@ export const client = {
   tagline: "Tutorat en mathématiques",
   location: "Québec",
   phone: "",
-  email: "contact@tuteurmatch.com",
+  email: "",
   subject: "Secondaire 4 SN",
   spokesperson: "Mouad",
 
@@ -19,19 +19,19 @@ export const client = {
     {
       videoUrl: "https://www.youtube.com/embed/f2m2BIiAyhU",
       name: "Melynda",
-      role: "Parent",
+      role: "Parent de Melynda",
       quote:
         "Ses notes ont remonté de 15 points avant l'examen du Ministère.",
     },
     {
       videoUrl: "https://www.youtube.com/embed/mdh-ip6UwkE",
       name: "Sasha",
-      role: "Parent",
+      role: "Parent de Sasha",
       quote:
-        "Elle a eu 92 à son premier examen alors qu'elle stressait tout l'été.",
+        "Il a eu 92 à son premier examen alors qu'il stressait tout l'été.",
     },
   ],
 
   guarantee:
-    "Si ton enfant suit la Méthode TM et n'obtient pas 90 %+ à son examen du ministère en maths Secondaire 4 SN, tu es remboursé intégralement.",
+    "Si votre enfant suit la Méthode TM et n'obtient pas 90 %+ à son examen du ministère en maths Secondaire 4 SN, vous êtes remboursé intégralement.",
 };

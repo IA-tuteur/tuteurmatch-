@@ -5,7 +5,7 @@ import { client } from "@/config/client";
 export const metadata: Metadata = {
   title: `Réserver un appel | ${client.name}`,
   description:
-    "Réserve ta consultation privée gratuite de 30 minutes avec l'équipe Tuteur Match.",
+    "Réservez votre consultation privée gratuite de 30 minutes avec l'équipe Tuteur Match.",
 };
 
 export default function BookingPage() {

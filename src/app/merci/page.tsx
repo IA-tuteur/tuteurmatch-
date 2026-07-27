@@ -4,7 +4,7 @@ import { client } from "@/config/client";
 export const metadata: Metadata = {
   title: `Consultation confirmée | ${client.name}`,
   description:
-    "Ta consultation privée gratuite est réservée. Regarde cette vidéo pour savoir à quoi t'attendre.",
+    "Votre consultation privée gratuite est réservée. Regardez cette vidéo pour savoir à quoi vous attendre.",
 };
 
 export default function ThankYouPage() {
@@ -20,12 +20,12 @@ export default function ThankYouPage() {
             </svg>
           </div>
           <h1>
-            Ta consultation est réservée.
+            Votre consultation est réservée.
           </h1>
           <p className="lead">
-            Regarde cette courte vidéo, {client.spokesperson}{" "}
-            t&apos;explique exactement comment te préparer
-            pour ton appel.
+            Regardez cette courte vidéo, {client.spokesperson}{" "}
+            vous explique exactement comment vous préparer
+            pour votre appel.
           </p>
 
           <div className="ty-video">
@@ -44,10 +44,10 @@ export default function ThankYouPage() {
           </div>
 
           <div className="email-alert">
-            <strong>Vérifie ta boîte de réception</strong>
+            <strong>Vérifiez votre boîte de réception</strong>
             <p>
-              Un courriel de confirmation vient de t&apos;être envoyé avec
-              les détails de ton appel. Si tu ne le vois pas, vérifie tes
+              Un courriel de confirmation vient de vous être envoyé avec
+              les détails de votre appel. Si vous ne le voyez pas, vérifiez vos
               courriers indésirables.
             </p>
           </div>
@@ -56,15 +56,15 @@ export default function ThankYouPage() {
 
       <section className="prep-section">
         <div className="wrap wrap--narrow">
-          <h2>Prépare-toi pour ton appel</h2>
+          <h2>Préparez-vous pour votre appel</h2>
           <p className="prep-subtitle">
-            Pour qu&apos;on puisse t&apos;aider au maximum en 30 minutes
+            Pour qu&apos;on puisse vous aider au maximum en 30 minutes
           </p>
           <ol className="prep-steps">
             <li>
               <span className="prep-num" />
               <div>
-                <strong>Le dernier bulletin de ton enfant</strong>
+                <strong>Le dernier bulletin de votre enfant</strong>
                 <p>
                   Ses notes en maths nous permettent de cibler exactement
                   où il a besoin d&apos;aide.
@@ -74,9 +74,9 @@ export default function ThankYouPage() {
             <li>
               <span className="prep-num" />
               <div>
-                <strong>Tes questions</strong>
+                <strong>Vos questions</strong>
                 <p>
-                  Note ce qui te préoccupe, on va y répondre directement
+                  Notez ce qui vous préoccupe, on va y répondre directement
                   pendant l&apos;appel.
                 </p>
               </div>
@@ -86,7 +86,7 @@ export default function ThankYouPage() {
               <div>
                 <strong>Un endroit calme</strong>
                 <p>
-                  L&apos;appel dure 30 minutes sur Google Meet. Assure-toi d&apos;être
+                  L&apos;appel dure 30 minutes sur Google Meet. Assurez-vous d&apos;être
                   disponible sans interruptions.
                 </p>
               </div>
@@ -97,10 +97,10 @@ export default function ThankYouPage() {
 
       <section className="closing">
         <div className="wrap wrap--narrow">
-          <h2>On a hâte de te parler.</h2>
+          <h2>On a hâte de vous parler.</h2>
           <p>
-            Si tu as besoin de modifier ton créneau, utilise le lien dans
-            ton courriel de confirmation.
+            Si vous avez besoin de modifier votre créneau, utilisez le lien dans
+            votre courriel de confirmation.
           </p>
         </div>
       </section>

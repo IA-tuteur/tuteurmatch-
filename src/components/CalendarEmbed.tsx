@@ -11,8 +11,8 @@ export function CalendarEmbed() {
       <div className="wrap">
         <div className="calendar-card">
           <div className="calendar-header">
-            <h3>Choisis ton créneau</h3>
-            <p>Sélectionne une date et une heure qui te conviennent.</p>
+            <h3>Choisissez votre créneau</h3>
+            <p>Sélectionnez une date et une heure qui vous conviennent.</p>
             <div className="calendar-trust">
               <span>
                 <span className="calendar-dot" /> 30 min sur Google Meet
