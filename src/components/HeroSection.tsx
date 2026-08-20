@@ -33,11 +33,11 @@ export function HeroSection() {
 
         <div className="hero__cta">
           <a href="#calendrier" className="btn btn--lg">
-            Réservez votre consultation gratuite sur Google Meet{" "}
+            Réservez votre consultation gratuite{" "}
             <span className="arrow">&rarr;</span>
           </a>
           <p className="cta-micro">
-            30 min · Google Meet · Gratuit · Aucun engagement
+            30 min · Gratuit · Aucun engagement
           </p>
         </div>
 
