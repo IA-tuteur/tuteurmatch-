@@ -10,26 +10,26 @@ export const metadata: Metadata = {
 
 const objections = [
   {
+    id: "motivation",
+    question:
+      "Mon enfant n'est pas motivé à prendre du tutorat. Que faire ?",
+    videoId: "3y_BqnGxcMk",
+  },
+  {
     id: "conditions",
     question:
-      "Et si les conditions ne sont pas parfaites pour mon enfant ?",
+      "Et si les conditions ne sont pas parfaites pour mon enfant ?",
     videoId: "ZXYGCU2tb6c",
   },
   {
     id: "different",
     question:
-      "Qu'est-ce qui vous rend différent des autres services de tutorat ?",
-    videoId: "3y_BqnGxcMk",
-  },
-  {
-    id: "motivation",
-    question:
-      "Mon enfant n'est pas motivé à prendre du tutorat. Que faire ?",
+      "Qu'est-ce qui vous rend différent des autres services de tutorat ?",
     videoId: "3y_BqnGxcMk",
   },
   {
     id: "cost",
-    question: "Combien ça coûte ?",
+    question: "Combien ça coûte ?",
     videoId: "4kxXT4iKNr0",
   },
 ];
