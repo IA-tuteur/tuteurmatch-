@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { client } from "@/config/client";
+import { objections } from "@/config/objections";
 import { ObjectionsGrid } from "@/components/ObjectionsGrid";
 
 export const metadata: Metadata = {
@@ -7,32 +8,6 @@ export const metadata: Metadata = {
   description:
     "Les préoccupations les plus fréquentes des parents, répondues en vidéo par Mouad, fondateur de Tuteur Match.",
 };
-
-const objections = [
-  {
-    id: "motivation",
-    question:
-      "Mon enfant n'est pas motivé à prendre du tutorat. Que faire ?",
-    videoId: "sZFDGiTABgs",
-  },
-  {
-    id: "conditions",
-    question:
-      "Et si les conditions ne sont pas parfaites pour mon enfant ?",
-    videoId: "ZXYGCU2tb6c",
-  },
-  {
-    id: "different",
-    question:
-      "Qu'est-ce qui vous rend différent des autres services de tutorat ?",
-    videoId: "3y_BqnGxcMk",
-  },
-  {
-    id: "cost",
-    question: "Combien ça coûte ?",
-    videoId: "4kxXT4iKNr0",
-  },
-];
 
 export default function ObjectionsPage() {
   return (

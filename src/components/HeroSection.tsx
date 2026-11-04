@@ -16,6 +16,15 @@ export function HeroSection() {
           de tout, de la méthode jusqu&apos;aux résultats.
         </p>
 
+        <p className="hero__credential">
+          <span className="hero__credential-name">
+            {client.spokesperson}, fondateur de {client.name}
+          </span>
+          <span className="hero__credential-role">
+            Enseignant au Collège Jean-de-Brébeuf
+          </span>
+        </p>
+
         <div className="hero__video">
           <div className="video-container">
             {client.vsl.embedUrl ? (
@@ -32,10 +41,15 @@ export function HeroSection() {
         </div>
 
         <div className="hero__cta">
-          <a href="#calendrier" className="btn btn--lg">
-            Réservez votre consultation gratuite{" "}
-            <span className="arrow">&rarr;</span>
-          </a>
+          <div className="hero__actions">
+            <a href="#calendrier" className="btn btn--lg">
+              Réservez votre consultation gratuite{" "}
+              <span className="arrow">&rarr;</span>
+            </a>
+            <a href="#temoignages" className="btn btn--lg btn--secondary">
+              Voir les témoignages
+            </a>
+          </div>
           <p className="cta-micro">
             30 min · Gratuit · Aucun engagement
           </p>
