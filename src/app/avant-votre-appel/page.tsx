@@ -29,24 +29,23 @@ const roadmap = [
   {
     when: "30 min",
     title: "L'appel",
-    text: "On fait le point sur la situation scolaire de votre enfant, on identifie ce qui le bloque et on vous présente notre approche.",
+    text: "On fait connaissance et on regarde où en est votre enfant.",
   },
   {
     title: "Diagnostic",
-    text: "On commence par ses habitudes de vie (sommeil, routine, environnement de travail), puis on identifie ses lacunes précises. Résultat : un plan ciblé sur sa vraie réalité, pas un programme générique.",
+    text: "On trouve ce qui bloque vraiment : habitudes, lacunes, stress.",
   },
   {
     title: "Méthode de travail",
-    text: "On met en place une méthode de travail qui lui est propre : un système prédictible pour aborder les problèmes inédits, gérer le stress et organiser son temps. C'est ce qui débloque les situations-problèmes.",
+    text: "On lui donne une façon de travailler qui marche, à chaque examen.",
   },
   {
     title: "Accompagnement et autonomie",
-    text: "Un hybride de séances de groupe et individuelles. On adapte le système en fonction des résultats de votre enfant à ses examens, et on réduit progressivement la supervision à mesure que sa confiance et ses notes augmentent, jusqu'à ce qu'il avance seul.",
+    text: "Groupe et individuel. On ajuste selon ses résultats, jusqu'à ce qu'il avance seul.",
   },
   {
-    when: "90\u00a0%+",
     title: "L'examen du ministère",
-    text: "90\u00a0%+ en maths Sec\u00a04\u00a0SN, avec une autonomie qui ne dépend de personne. Sinon, on continue gratuitement jusqu'à des résultats satisfaisants, si votre enfant met l'effort et suit la Méthode TM.",
+    text: "Il arrive prêt, autonome, et vise 90\u00a0%+.",
   },
 ];
 
@@ -95,9 +94,9 @@ export default function AvantVotreAppelPage() {
         </div>
       </section>
 
-      <section className="precall-section precall-section--surface">
-        <div className="wrap wrap--narrow">
-          <h2>Le parcours vers 90&nbsp;%+ et l&apos;autonomie</h2>
+      <section className="precall-section precall-road-section">
+        <div className="wrap">
+          <h2>Le parcours</h2>
           <ol className="precall-road">
             {roadmap.map((step, index) => (
               <li key={step.title}>
@@ -105,15 +104,21 @@ export default function AvantVotreAppelPage() {
                   {index + 1}
                 </span>
                 <div>
-                  {step.when ? (
-                    <p className="precall-road__when">{step.when}</p>
-                  ) : null}
-                  <h3>{step.title}</h3>
+                  <h3>
+                    {step.title}
+                    {step.when ? (
+                      <span className="precall-road__when">{step.when}</span>
+                    ) : null}
+                  </h3>
                   <p className="precall-road__text">{step.text}</p>
                 </div>
               </li>
             ))}
           </ol>
+          <p className="precall-road__guarantee">
+            Sinon, on continue gratuitement jusqu&apos;à des résultats
+            satisfaisants.
+          </p>
         </div>
       </section>
 
