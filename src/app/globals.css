@@ -151,20 +151,12 @@ section {
 .hero .eyebrow { color: var(--accent); }
 .hero__h1 {
   color: var(--ink);
-  font-size: clamp(28px, 4.2vw, 48px);
-  max-width: 20ch;
-  margin: 0 auto .35em;
-  line-height: 1.12;
-}
-.hero__pledge {
-  display: block;
-  max-width: 28ch;
-  margin: 0.7em auto 0;
-  font-size: clamp(17px, 1.8vw, 22px);
+  font-size: clamp(26px, 3.6vw, 42px);
   font-weight: 500;
-  font-style: italic;
-  line-height: 1.35;
-  color: var(--accent);
+  font-style: normal;
+  max-width: 22em;
+  margin: 0 auto .4em;
+  line-height: 1.18;
 }
 .hero__accent {
   color: var(--accent);
@@ -179,32 +171,43 @@ section {
   line-height: 1.65;
 }
 .hero__credential {
-  display: flex;
-  flex-direction: column;
+  display: inline-flex;
+  flex-direction: row;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   width: fit-content;
-  max-width: calc(100% - 8px);
-  margin: 4px auto clamp(28px, 3.5vw, 40px);
-  padding: 18px 26px 14px;
-  border-radius: 18px;
+  max-width: 100%;
+  margin: 0 auto 14px;
+  padding: 5px 10px 5px 7px;
+  border-radius: 10px;
   background: var(--surface);
   border: 1px solid var(--line);
-  border-top: 3px solid var(--accent);
-  box-shadow: var(--shadow-sm);
+  box-shadow: none;
 }
 .hero__credential-logo {
-  width: min(196px, 62vw);
+  width: 108px;
   height: auto;
+  flex: none;
 }
 .hero__credential-role {
   margin: 0;
   font-size: 11px;
   font-weight: 600;
-  letter-spacing: .16em;
-  text-transform: uppercase;
-  color: var(--accent);
-  line-height: 1.4;
+  letter-spacing: .04em;
+  text-transform: none;
+  color: var(--muted);
+  line-height: 1.25;
+  text-align: left;
+}
+@media (max-width: 720px) {
+  .hero { padding-top: 28px; }
+  .hero__credential {
+    gap: 6px;
+    margin-bottom: 12px;
+    padding: 4px 8px 4px 6px;
+  }
+  .hero__credential-logo { width: 78px; }
+  .hero__credential-role { font-size: 10px; }
 }
 
 /* Video */

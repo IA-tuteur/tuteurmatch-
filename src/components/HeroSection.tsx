@@ -9,12 +9,9 @@ export function HeroSection() {
           Parents du Québec · Secondaire 4 SN
         </span>
         <h1 className="hero__h1">
-          On <em className="hero__accent">garantit</em>{" "}
-          90&nbsp;%+ à l&apos;examen du ministère en maths Secondaire 4 SN.
-          <span className="hero__pledge">
-            Sinon, on continue gratuitement jusqu&apos;à des résultats
-            satisfaisants.
-          </span>
+          On garantit 90&nbsp;%+ à l&apos;examen du ministère en maths
+          Secondaire 4 SN. Sinon, on continue gratuitement jusqu&apos;à des
+          résultats satisfaisants.
         </h1>
         <p className="hero__sub">
           Sans devenir la police des devoirs chaque soir, on s&apos;occupe
