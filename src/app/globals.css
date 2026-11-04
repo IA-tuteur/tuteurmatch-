@@ -154,9 +154,11 @@ section {
   font-size: clamp(26px, 3.6vw, 42px);
   font-weight: 500;
   font-style: normal;
+  letter-spacing: normal;
   max-width: 22em;
   margin: 0 auto .4em;
   line-height: 1.18;
+  text-wrap: balance;
 }
 .hero__accent {
   color: var(--accent);
