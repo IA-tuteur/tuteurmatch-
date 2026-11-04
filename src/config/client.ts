@@ -33,5 +33,5 @@ export const client = {
   ],
 
   guarantee:
-    "Si votre enfant suit la Méthode TM et n'obtient pas 90 %+ à son examen du ministère en maths Secondaire 4 SN, vous êtes remboursé intégralement.",
+    "Si votre enfant suit la Méthode TM et n'obtient pas 90\u00a0%+ à son examen du ministère en maths Secondaire\u00a04\u00a0SN, on continue gratuitement jusqu'à des résultats satisfaisants.",
 };

@@ -7,7 +7,7 @@ export function GuaranteeBanner() {
         <span className="eyebrow">Notre garantie</span>
         <p className="guarantee__text">{client.guarantee}</p>
         <p className="guarantee__note">
-          Pas de conditions cachées. Si on ne livre pas, on rembourse.
+          Pas de conditions cachées, et sans frais de plus.
         </p>
       </div>
     </section>

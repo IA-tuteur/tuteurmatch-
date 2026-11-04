@@ -1,12 +1,7 @@
 "use client";
 
 import { useState } from "react";
-
-type Objection = {
-  id: string;
-  question: string;
-  videoId: string;
-};
+import type { Objection } from "@/config/objections";
 
 export function ObjectionsGrid({ objections }: { objections: Objection[] }) {
   const [playing, setPlaying] = useState<Set<string>>(new Set());
@@ -28,6 +23,7 @@ export function ObjectionsGrid({ objections }: { objections: Objection[] }) {
               <iframe
                 src={`https://www.youtube.com/embed/${o.videoId}?autoplay=1`}
                 title={o.question}
+                loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
@@ -36,11 +32,16 @@ export function ObjectionsGrid({ objections }: { objections: Objection[] }) {
                 type="button"
                 className="obj-card__thumb"
                 onClick={() => handlePlay(o.id)}
-                style={{
-                  backgroundImage: `url(https://i.ytimg.com/vi/${o.videoId}/hqdefault.jpg)`,
-                }}
-                aria-label={`Regarder la réponse: ${o.question}`}
+                aria-label={`Regarder la réponse : ${o.question}`}
               >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  className="obj-card__thumb-img"
+                  src={`https://i.ytimg.com/vi/${o.videoId}/hqdefault.jpg`}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
                 <span className="obj-card__play" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="currentColor">
                     <path d="M8 5v14l11-7z" />

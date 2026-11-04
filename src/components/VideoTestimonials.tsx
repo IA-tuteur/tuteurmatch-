@@ -2,7 +2,7 @@ import { client } from "@/config/client";
 
 export function VideoTestimonials() {
   return (
-    <section className="testimonials">
+    <section className="testimonials" id="temoignages">
       <div className="wrap">
         <h2 className="testimonials__title">
           Des parents. Des résultats.
@@ -15,6 +15,7 @@ export function VideoTestimonials() {
                   <iframe
                     src={t.videoUrl}
                     title={`Témoignage de ${t.name}`}
+                    loading="lazy"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   />
