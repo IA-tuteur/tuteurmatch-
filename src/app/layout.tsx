@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   title:
     "Tuteur Match | 90%+ garanti à l'examen du ministère en maths Sec 4 SN",
   description:
-    "On garantit que votre enfant atteindra 90%+ à l'examen du ministère en maths Secondaire 4 SN, ou vous êtes remboursé. Regardez la vidéo et réservez votre consultation privée gratuite.",
+    "On garantit que votre enfant atteindra 90 %+ à l'examen du ministère en maths Secondaire 4 SN. Sinon, on continue gratuitement jusqu'à des résultats satisfaisants. Regardez la vidéo et réservez votre consultation privée gratuite.",
   openGraph: {
     title:
       "Tuteur Match | 90%+ garanti à l'examen du ministère en maths Sec 4 SN",

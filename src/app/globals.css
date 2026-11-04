@@ -153,8 +153,18 @@ section {
   color: var(--ink);
   font-size: clamp(28px, 4.2vw, 48px);
   max-width: 20ch;
-  margin: 0 auto .4em;
+  margin: 0 auto .35em;
   line-height: 1.12;
+}
+.hero__pledge {
+  display: block;
+  max-width: 28ch;
+  margin: 0.7em auto 0;
+  font-size: clamp(17px, 1.8vw, 22px);
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.35;
+  color: var(--accent);
 }
 .hero__accent {
   color: var(--accent);
@@ -172,24 +182,27 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
+  gap: 12px;
   width: fit-content;
-  max-width: 100%;
-  margin: 0 auto clamp(28px, 3.5vw, 40px);
-  padding: 12px 20px;
-  border-radius: 16px;
-  background: var(--light-deep);
+  max-width: calc(100% - 8px);
+  margin: 4px auto clamp(28px, 3.5vw, 40px);
+  padding: 18px 26px 14px;
+  border-radius: 18px;
+  background: var(--surface);
   border: 1px solid var(--line);
+  border-top: 3px solid var(--accent);
+  box-shadow: var(--shadow-sm);
 }
-.hero__credential-name {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--ink);
-  line-height: 1.35;
+.hero__credential-logo {
+  width: min(196px, 62vw);
+  height: auto;
 }
 .hero__credential-role {
-  font-size: 13px;
+  margin: 0;
+  font-size: 11px;
   font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
   color: var(--accent);
   line-height: 1.4;
 }
@@ -342,8 +355,8 @@ section {
   font-size: clamp(17px, 1.8vw, 22px);
   line-height: 1.5;
   color: var(--ink);
-  max-width: 44ch;
-  margin: 0 auto 8px;
+  max-width: 46ch;
+  margin: 0 auto 10px;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 .guarantee__note {
