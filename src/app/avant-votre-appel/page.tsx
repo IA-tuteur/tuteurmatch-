@@ -8,7 +8,7 @@ import { objections } from "@/config/objections";
 export const metadata: Metadata = {
   title: `Avant votre appel | ${client.name}`,
   description:
-    "Votre consultation est confirmée. Regardez ces vidéos avant notre appel.",
+    "Voici tout ce que vous devez savoir avant notre appel.",
   robots: {
     index: false,
     follow: false,
@@ -25,6 +25,33 @@ const callPoints = [
   "Vous présenter notre approche",
 ];
 
+const roadmap = [
+  {
+    when: "30 min",
+    needsProof: false,
+    title: "L'appel",
+    text: "On fait le point sur la situation scolaire de votre enfant, on identifie ce qui le bloque et on vous présente notre approche. La rencontre a lieu sur Google Meet.",
+  },
+  {
+    when: "PROOF NEEDED",
+    needsProof: true,
+    title: "La Méthode TM",
+    text: "On s'occupe de tout, de la méthode jusqu'aux résultats. Votre enfant suit la Méthode TM.",
+  },
+  {
+    when: "PROOF NEEDED",
+    needsProof: true,
+    title: "L'examen du ministère",
+    text: "L'objectif est 90 %+ à l'examen du ministère en maths Secondaire 4 SN.",
+  },
+  {
+    when: "Jusqu'à des résultats satisfaisants",
+    needsProof: false,
+    title: "On continue, gratuitement",
+    text: "Si votre enfant suit la Méthode TM et n'obtient pas 90 %+, on continue gratuitement jusqu'à des résultats satisfaisants.",
+  },
+];
+
 export default function AvantVotreAppelPage() {
   const vslId = youtubeId(client.vsl.embedUrl);
 
@@ -32,10 +59,7 @@ export default function AvantVotreAppelPage() {
     <main className="precall">
       <section className="precall-hero">
         <div className="wrap wrap--narrow">
-          <h1>Votre consultation est confirmée</h1>
-          <p className="precall-hero__lead">
-            Regardez ces vidéos avant notre appel.
-          </p>
+          <h1>Voici tout ce que vous devez savoir avant notre appel</h1>
 
           <figure className="hero__credential">
             <Image
@@ -63,7 +87,7 @@ export default function AvantVotreAppelPage() {
 
       <section className="precall-section precall-section--ground">
         <div className="wrap">
-          <h2>Étape 1. La présentation</h2>
+          <h2>Comment ça fonctionne</h2>
           <div className="precall-vsl">
             <ClickToPlayVideo
               videoId={vslId}
@@ -73,12 +97,40 @@ export default function AvantVotreAppelPage() {
         </div>
       </section>
 
+      <section className="precall-section precall-section--surface">
+        <div className="wrap wrap--narrow">
+          <h2>De l&apos;appel aux résultats</h2>
+          <ol className="precall-road">
+            {roadmap.map((step, index) => (
+              <li key={step.title}>
+                <span className="precall-road__num" aria-hidden="true">
+                  {index + 1}
+                </span>
+                <div>
+                  <p
+                    className={
+                      step.needsProof
+                        ? "precall-road__when precall-road__when--missing"
+                        : "precall-road__when"
+                    }
+                  >
+                    {step.when}
+                  </p>
+                  <h3>{step.title}</h3>
+                  <p className="precall-road__text">{step.text}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
       <section
-        className="precall-section precall-section--surface"
+        className="precall-section precall-section--ground"
         id="temoignages"
       >
         <div className="wrap">
-          <h2>Étape 2. Ce que les parents en disent</h2>
+          <h2>Ce que les autres parents disent</h2>
           <div className="testimonials__grid">
             {client.testimonials.map((t) => (
               <article key={t.name} className="testimonial-card">
@@ -95,9 +147,10 @@ export default function AvantVotreAppelPage() {
         </div>
       </section>
 
-      <section className="precall-section precall-section--ground">
+      <section className="precall-section precall-section--surface">
         <div className="wrap">
-          <h2>Étape 3. Vos questions, répondues</h2>
+          <span className="eyebrow">Questions fréquentes</span>
+          <h2>Toutes les questions qu&apos;on nous pose avant l&apos;appel, répondues</h2>
           <ObjectionsGrid objections={objections} />
         </div>
       </section>
