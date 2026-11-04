@@ -66,7 +66,8 @@ body > * { position: relative; z-index: 1; }
   transition: opacity .2s ease;
 }
 .top-bar a:hover { opacity: .85; }
-body:has(.ty-hero) .top-bar { display: none; }
+body:has(.ty-hero) .top-bar,
+body:has(.precall) .top-bar { display: none; }
 
 /* ===== Typography ===== */
 h1, h2, h3 {
@@ -863,6 +864,95 @@ section {
   line-height: 1.65;
 }
 .obj-cta .cta-micro { margin-top: 14px; }
+
+/* ===== Pre-call page ===== */
+.precall-hero {
+  padding: clamp(28px, 4vw, 48px) 0 clamp(20px, 3vw, 28px);
+  text-align: center;
+  background: var(--surface);
+}
+.precall-hero h1 {
+  font-size: clamp(28px, 4vw, 40px);
+  max-width: 16em;
+  margin: 0 auto .25em;
+}
+.precall-hero__lead {
+  color: var(--muted);
+  font-size: clamp(16px, 1.6vw, 18px);
+  margin: 0 auto 14px;
+}
+.precall-hero .hero__credential { margin-bottom: 18px; }
+.precall-points {
+  list-style: none;
+  counter-reset: call;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 34rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.precall-points li {
+  counter-increment: call;
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  gap: 8px;
+  align-items: start;
+  font-size: 15px;
+  line-height: 1.35;
+  color: var(--ink);
+}
+.precall-points li::before {
+  content: counter(call);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--accent-glow);
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+}
+.precall-note {
+  margin: 14px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+}
+.precall-section {
+  padding: clamp(28px, 4vw, 48px) 0;
+  text-align: center;
+}
+.precall-section--ground { background: var(--ground); }
+.precall-section--surface { background: var(--surface); }
+.precall-section h2 {
+  font-size: clamp(22px, 3vw, 30px);
+  margin: 0 auto .7em;
+  max-width: 20em;
+}
+#temoignages { scroll-margin-top: 12px; }
+.precall-vsl {
+  max-width: 780px;
+  margin: 0 auto;
+}
+.precall .testimonial-card__author { margin: 0; }
+.precall .obj-grid { text-align: left; }
+.precall-close {
+  padding: clamp(36px, 5vw, 64px) 0;
+  text-align: center;
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+}
+.precall-close .eyebrow { color: var(--accent); }
+.precall-close__sign {
+  margin: 16px 0 0;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(18px, 2vw, 22px);
+  color: var(--ink);
+}
 
 /* ===== Accessibility ===== */
 @media (prefers-reduced-motion: reduce) {
