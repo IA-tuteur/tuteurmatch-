@@ -37,16 +37,11 @@ const roadmap = [
   },
   {
     title: "Méthode de travail",
-    text: "On installe un système prédictible : comment réviser, aborder un problème inédit, gérer le stress et organiser son temps sur plusieurs mois. C'est ce qui débloque les situations-problèmes.",
+    text: "On met en place une méthode de travail qui lui est propre : un système prédictible pour aborder les problèmes inédits, gérer le stress et organiser son temps. C'est ce qui débloque les situations-problèmes.",
   },
   {
-    when: "2 + 1 par semaine",
-    title: "Accompagnement",
-    text: "2 séances de groupe + 1 séance individuelle par semaine. On teste et on adapte le système à lui, jusqu'à ce qu'il puisse étudier seul, efficacement.",
-  },
-  {
-    title: "Autonomie",
-    text: "On réduit progressivement la supervision à mesure que sa confiance et ses résultats augmentent. Il sait quoi faire, et dans quel ordre.",
+    title: "Accompagnement et autonomie",
+    text: "Un hybride de séances de groupe et individuelles. On adapte le système en fonction des résultats de votre enfant à ses examens, et on réduit progressivement la supervision à mesure que sa confiance et ses notes augmentent, jusqu'à ce qu'il avance seul.",
   },
   {
     when: "90\u00a0%+",
