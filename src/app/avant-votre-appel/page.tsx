@@ -28,27 +28,30 @@ const callPoints = [
 const roadmap = [
   {
     when: "30 min",
-    needsProof: false,
     title: "L'appel",
-    text: "On fait le point sur la situation scolaire de votre enfant, on identifie ce qui le bloque et on vous présente notre approche. La rencontre a lieu sur Google Meet.",
+    text: "On fait le point sur la situation scolaire de votre enfant, on identifie ce qui le bloque et on vous présente notre approche.",
   },
   {
-    when: "PROOF NEEDED",
-    needsProof: true,
-    title: "La Méthode TM",
-    text: "On s'occupe de tout, de la méthode jusqu'aux résultats. Votre enfant suit la Méthode TM.",
+    title: "Diagnostic",
+    text: "On commence par ses habitudes de vie (sommeil, routine, environnement de travail), puis on identifie ses lacunes précises. Résultat : un plan ciblé sur sa vraie réalité, pas un programme générique.",
   },
   {
-    when: "PROOF NEEDED",
-    needsProof: true,
+    title: "Méthode de travail",
+    text: "On installe un système prédictible : comment réviser, aborder un problème inédit, gérer le stress et organiser son temps sur plusieurs mois. C'est ce qui débloque les situations-problèmes.",
+  },
+  {
+    when: "2 + 1 par semaine",
+    title: "Accompagnement",
+    text: "2 séances de groupe + 1 séance individuelle par semaine. On teste et on adapte le système à lui, jusqu'à ce qu'il puisse étudier seul, efficacement.",
+  },
+  {
+    title: "Autonomie",
+    text: "On réduit progressivement la supervision à mesure que sa confiance et ses résultats augmentent. Il sait quoi faire, et dans quel ordre.",
+  },
+  {
+    when: "90\u00a0%+",
     title: "L'examen du ministère",
-    text: "L'objectif est 90 %+ à l'examen du ministère en maths Secondaire 4 SN.",
-  },
-  {
-    when: "Jusqu'à des résultats satisfaisants",
-    needsProof: false,
-    title: "On continue, gratuitement",
-    text: "Si votre enfant suit la Méthode TM et n'obtient pas 90 %+, on continue gratuitement jusqu'à des résultats satisfaisants.",
+    text: "90\u00a0%+ en maths Sec\u00a04\u00a0SN, avec une autonomie qui ne dépend de personne. Sinon, on continue gratuitement jusqu'à des résultats satisfaisants, si votre enfant met l'effort et suit la Méthode TM.",
   },
 ];
 
@@ -99,7 +102,7 @@ export default function AvantVotreAppelPage() {
 
       <section className="precall-section precall-section--surface">
         <div className="wrap wrap--narrow">
-          <h2>De l&apos;appel aux résultats</h2>
+          <h2>Le parcours vers 90&nbsp;%+ et l&apos;autonomie</h2>
           <ol className="precall-road">
             {roadmap.map((step, index) => (
               <li key={step.title}>
@@ -107,15 +110,9 @@ export default function AvantVotreAppelPage() {
                   {index + 1}
                 </span>
                 <div>
-                  <p
-                    className={
-                      step.needsProof
-                        ? "precall-road__when precall-road__when--missing"
-                        : "precall-road__when"
-                    }
-                  >
-                    {step.when}
-                  </p>
+                  {step.when ? (
+                    <p className="precall-road__when">{step.when}</p>
+                  ) : null}
                   <h3>{step.title}</h3>
                   <p className="precall-road__text">{step.text}</p>
                 </div>
